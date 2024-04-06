@@ -1,39 +1,37 @@
 import React from 'react'
 import './Orders.css'
-import pic1 from '../../assets/Images/pic1.jpg'
-import pic2 from '../../assets/Images/pic1.jpg'
-import pic3 from '../../assets/Images/pic1.jpg'
 
 export default function Orders() {
+    console.log(window.innerWidth)
     return (
         <table className='order_cont poppins-regular'>
             <tr>
-                <th>Product Name</th>
+                {window.innerWidth > 1200 && <th>Product Name</th>}
                 <th>Product Number</th>
                 <th>Amount</th>
                 <th>Status</th>
-                <th>&nbsp;s</th>
+                {window.innerHeight > 1200 && <td>&nbsp;</td>}
             </tr>
             <tr>
-                <td>Mobile</td>
+                {window.innerWidth > 1200 && <td>Mobile</td>}
                 <td>9,06,756</td>
                 <td>Due</td>
-                <td><span color='#F7D060'>Pending</span></td>
-                <td>Detail</td>
+                <td><span style={{ color: '#F7D060' }}>Pending</span></td>
+                {window.innerWidth > 1200 && <td>Detail</td>}
             </tr>
             <tr>
-                <td>Laptop</td>
+                {window.innerWidth > 1200 && <td>Laptop</td>}
                 <td>98,762</td>
                 <td>Refundabe</td>
-                <td>Declined</td>
-                <td>Detail</td>
+                <td><span style={{ color: '#FF0060' }}>Declined</span></td>
+                {window.innerWidth > 1200 && <td>Detail</td>}
             </tr>
             <tr>
-                <td>Airpods</td>
+                {window.innerWidth > 1200 && <td>Airpods</td>}
                 <td>1,95345</td>
                 <td>Paid</td>
-                <td>Active</td>
-                <td>Detail</td>
+                <td><span style={{ color: '#195bce' }}>Active</span></td>
+                {window.innerWidth > 1200 && <td>Detail</td>}
             </tr>
         </table>
     )

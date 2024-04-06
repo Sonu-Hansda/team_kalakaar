@@ -1,0 +1,29 @@
+.toplevel{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f9;
+    display: flex;
+}
+.toplevel > div{
+    /* background-color: red; */
+}
+.top{
+    background-color: green;
+}
+.left{
+    grid-row: 1 / span 2;
+    background-color: red;
+}
+.right{
+    grid-row: 1 / span 2;
+    background-color: blue;
+}
+.center{
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .left, .right{
+        display: none;
+    }
+}

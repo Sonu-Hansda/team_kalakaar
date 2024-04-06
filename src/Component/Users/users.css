@@ -1,14 +1,26 @@
+:root {
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
 .users_container{
-    margin: 100px 50px;
     background-color: #fff;
     padding: 2rem 6rem;
     border-radius: 30px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     cursor: pointer;
-    box-shadow: 1px 8px 20px rgba(236, 237, 240, 0.836);
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    /* gap: 20px; */
     
+}
+.users_container > div{
+    display: flex;
+    align-items: center;
+    width: 49%;
+    /* background-color: red; */
+    justify-content: space-around;
+    min-width: 400px;
 }
 .users_container:hover{
     box-shadow: none;
@@ -18,6 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* width: 200px; */
 }
 
 .person__container img{

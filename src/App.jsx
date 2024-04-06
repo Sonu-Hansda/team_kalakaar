@@ -6,12 +6,15 @@ function App() {
   return (
     <>
       <div className="toplevel">
-        <div className="top_bar">thi is ntop</div>
-        <div className="nevbar">this is new</div>
-        <div className="body">
-          <Users />
-          <Orders />
+        {window.innerWidth > 400 && <div className="left">thi is top</div>}
+        <div className="center">
+          <div className="top">thisi si top</div>
+          <div className="main">
+            <Users />
+            <Orders />
+          </div>
         </div>
+        {window.innerWidth > 400 && <div className="right">thi is right</div>}
       </div>
     </>
   )
