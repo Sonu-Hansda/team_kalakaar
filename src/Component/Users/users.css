@@ -1,0 +1,38 @@
+.users_container{
+    margin: 100px 50px;
+    background-color: #fff;
+    padding: 2rem 6rem;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 1px 8px 20px rgba(236, 237, 240, 0.836);
+    
+}
+.users_container:hover{
+    box-shadow: none;
+}
+
+.person__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person__container img{
+    width: 78px;
+    border-radius: 100%;
+    margin-bottom: 2.7px;
+    
+}
+
+.person__primaryText{
+    font-size: large;
+    margin: 0;
+}
+.person__secondaryText{
+    font-size: small;
+    margin: 0;
+    color: gray;
+}
